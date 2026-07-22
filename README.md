@@ -133,7 +133,6 @@ These constraints are documented up front and will be restated in the findings m
 - **No true availability data.** Utilization is measured against booked hours and stated schedules, not a system record of open chair time. Dead-zone estimates are therefore approximate, and any schedule recommendations are directional.
 - **Churn is inferred, not observed.** A client who stops booking may have moved, switched salons, or changed habits; the data cannot distinguish these. Churn flags identify clients worth contacting, not confirmed losses.
 - **Requested-vs-assigned stylist may be incomplete.** If the exports do not reliably capture whether a stylist was specifically requested, the request-rate and redirection analyses will be scoped down or omitted, and this will be stated in the memo.
-- **Attribution of outcomes is soft.** If outreach is followed by recovered bookings, causation is plausible but not proven; no control group exists in a single-salon engagement. Outcome claims will be phrased accordingly.
 - **Single business.** Findings describe Salon Escada and should not be generalized to other salons.
 
 ## 10. Success Criteria

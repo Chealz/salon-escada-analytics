@@ -1,16 +1,16 @@
 import duckdb
 con = duckdb.connect("data/processed/salon.duckdb")
 print(con.execute("""
-    SELECT
-      count(*) AS rows,
-      min(checkout_date) AS first_tx,
-      max(checkout_date) AS last_tx,
-      count(*) FILTER (WHERE checkout_date IS NULL) AS null_dates,
-      round(sum(amount_paid), 2) AS total_paid
+    SELECT transaction_type,
+           count(*) AS line_items,
+           round(sum(amount_paid), 2) AS paid,
+           round(sum(price), 2) AS price_total,
+           round(sum(tip), 2) AS tips
     FROM raw.transactions
+    GROUP BY 1 ORDER BY paid DESC
 """).df().to_string(index=False))
 print(con.execute("""
-    SELECT stylist_id, count(*) AS line_items
-    FROM raw.transactions GROUP BY 1 ORDER BY 2 DESC
+    SELECT year(checkout_date) AS yr, round(sum(amount_paid), 2) AS paid
+    FROM raw.transactions GROUP BY 1 ORDER BY 1
 """).df().to_string(index=False))
 con.close()

@@ -79,6 +79,8 @@ for col in ["price", "tax", "tip", "discount", "amount_paid"]:
 for col in ["checkout_date", "appointment_date"]:
     tx[col] = pd.to_datetime(tx[col], errors="coerce")
 
+    tx = tx[tx["checkout_date"].notna()]
+
 # ---------- customers ----------
 
 f = next(RAW.glob("Customers_*.xlsx"))

@@ -1,0 +1,15 @@
+# client data - never commit
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.db
+*.duckdb
+
+# the pseudonymization key (contains real names)
+id_mapping*
+
+# junk
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/

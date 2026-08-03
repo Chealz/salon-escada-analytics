@@ -135,6 +135,8 @@ These constraints are documented up front and will be restated in the findings m
 - **Requested-vs-assigned stylist may be incomplete.** If the exports do not reliably capture whether a stylist was specifically requested, the request-rate and redirection analyses will be scoped down or omitted, and this will be stated in the memo.
 - **Single business.** Findings describe Salon Escada and should not be generalized to other salons.
 
+- **Clients are keyed on normalized names.** Vagaro exports contain no client ID, so records are linked by normalized full name. Two distinct clients sharing an identical name would merge into one pseudonymous ID, and the same client spelled differently across reports would split into two. A visit-frequency audit found no clear merge artifacts, but this remains a known constraint of the source data.
+
 ## 10. Success Criteria
 
 - Owner uses at least one output (outreach list or scheduling change) within 4 weeks of delivery.

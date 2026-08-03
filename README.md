@@ -42,7 +42,7 @@ SQL transformations + data quality checks
   - null/duplicate checks, valid status values,
     referential integrity, row-count deltas per load
       ▼
-Owner dashboard (Looker Studio)         Written deliverables
+Owner dashboard (Data Studio (formerly Looker Studio))         Written deliverables
   - marts pushed to Google Sheets         - findings memo
   - private share to owner's account      - recommendations
   - phone-friendly, zero-license          - outcome tracking
@@ -52,7 +52,7 @@ Public companion (Tableau Public)
   - rebuilds 2-3 key views for portfolio evidence
 ```
 
-**Stack:** Python (pandas), DuckDB, SQL, Looker Studio (owner dashboard), Tableau Public (synthetic-data companion for the public portfolio).
+**Stack:** Python (pandas), DuckDB, SQL, Data Studio (formerly Looker Studio) (owner dashboard), Tableau Public (synthetic-data companion for the public portfolio).
 
 **Why DuckDB:** columnar, zero-config, clean ingestion of tabular files, and keeps all analytical logic in SQL, which is the skill this project is meant to demonstrate.
 
@@ -91,7 +91,7 @@ Public companion (Tableau Public)
 ## 5. Deliverables
 
 1. **Reproducible pipeline**: ingest, anonymize, transform (SQL), validate; runnable end-to-end on a fresh export.
-2. **Owner dashboard (Looker Studio)**: retention, utilization, revenue, and stylist views; weekly outreach list front and center; shared privately to the owner's Google account.
+2. **Owner dashboard (Data Studio (formerly Looker Studio))**: retention, utilization, revenue, and stylist views; weekly outreach list front and center; shared privately to the owner's Google account.
 3. **Findings memo**: 3 to 5 evidence-backed findings in plain language, each paired with a recommended action.
 4. **Outcome log**: which recommendations the owner acted on and measurable results (e.g., appointments recovered from outreach), collected 4-8 weeks post-delivery.
 5. **Public repo**: code, schema, README with architecture diagram and methodology; synthetic sample data only.

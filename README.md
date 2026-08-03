@@ -2,9 +2,21 @@
 
 **Author:** Charles Asiedu
 **Client:** Salon Escada (multi-stylist hair salon, Seattle, WA)
-**Status:** Proposal · July 2026
+**Status:** Delivered · August 2026 (outcome tracking in progress)
 
 ---
+
+## Headline Findings
+
+Analysis of 3.6 years of booking data surfaced five findings, delivered to the owner as a plain-language memo with recommendations:
+
+1. 34 established regulars are past their personal rebooking cycle, representing roughly $59K in lifetime value; a ranked outreach list was delivered.
+2. First-visit retention (90-day return rate) declined from 27% (2023 cohort) to 17% (2025 cohort).
+3. Color clients return 10 days sooner, 10 points more reliably, and spend about twice as much per visit as cut-only clients, making cut-to-color conversion the highest-leverage growth move.
+4. 88 consultations never converted to a booked service.
+5. Keratin clients run on a roughly 3-month cycle, an exact target for reminder timing.
+
+Absolute revenue figures and per-stylist details are shared privately with the owner and excluded here.
 
 ## 1. Objective
 
